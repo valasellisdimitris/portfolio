@@ -1,0 +1,9 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow admin or private paths (if any in future)
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://dimitrisvalasellis.com/sitemap.xml

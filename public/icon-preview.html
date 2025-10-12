@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Icon Preview - Dimitris Valasellis</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: 'Arial', sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    h1 {
+      color: #171717;
+      margin-bottom: 40px;
+    }
+    
+    .icon-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      width: 100%;
+    }
+    
+    .icon-item {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+    
+    .icon-wrapper {
+      width: 100%;
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #171717;
+      border-radius: 8px;
+      position: relative;
+    }
+    
+    .icon-content {
+      color: white;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .main-letter {
+      font-size: 3em;
+      line-height: 1;
+    }
+    
+    .sub-letter {
+      font-size: 1.2em;
+      opacity: 0.8;
+      margin-top: -10px;
+    }
+    
+    .icon-label {
+      color: #666;
+      font-size: 14px;
+      text-align: center;
+    }
+    
+    .size-badge {
+      background: #171717;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    
+    .og-preview {
+      grid-column: 1 / -1;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .og-image {
+      width: 100%;
+      aspect-ratio: 1200 / 630;
+      background: linear-gradient(135deg, #171717 0%, #404040 100%);
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      gap: 20px;
+    }
+    
+    .og-image h2 {
+      font-size: 3em;
+      margin: 0;
+      font-weight: bold;
+    }
+    
+    .og-image p {
+      font-size: 1.5em;
+      margin: 0;
+      opacity: 0.9;
+    }
+    
+    .og-image .url {
+      font-size: 1em;
+      opacity: 0.7;
+      margin-top: 10px;
+    }
+    
+    .instructions {
+      background: #fff3cd;
+      border: 2px solid #ffc107;
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 40px;
+      max-width: 800px;
+      width: 100%;
+    }
+    
+    .instructions h3 {
+      margin-top: 0;
+      color: #856404;
+    }
+    
+    .instructions ol {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+    
+    .instructions li {
+      margin: 8px 0;
+      color: #856404;
+    }
+    
+    code {
+      background: #f5f5f5;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎨 Icon Preview & Generator</h1>
+  
+  <div class="icon-grid">
+    <div class="icon-item">
+      <div class="icon-wrapper" style="width: 64px; height: 64px;">
+        <div class="icon-content">
+          <div class="main-letter">D</div>
+          <div class="sub-letter" style="font-size: 0.6em;">V</div>
+        </div>
+      </div>
+      <div class="icon-label">
+        <div class="size-badge">16×16</div>
+        <div>favicon-16x16.png</div>
+      </div>
+    </div>
+    
+    <div class="icon-item">
+      <div class="icon-wrapper" style="width: 96px; height: 96px;">
+        <div class="icon-content">
+          <div class="main-letter">D</div>
+          <div class="sub-letter">V</div>
+        </div>
+      </div>
+      <div class="icon-label">
+        <div class="size-badge">32×32</div>
+        <div>favicon-32x32.png</div>
+      </div>
+    </div>
+    
+    <div class="icon-item">
+      <div class="icon-wrapper" style="width: 128px; height: 128px;">
+        <div class="icon-content">
+          <div class="main-letter">D</div>
+          <div class="sub-letter">V</div>
+        </div>
+      </div>
+      <div class="icon-label">
+        <div class="size-badge">180×180</div>
+        <div>apple-touch-icon.png</div>
+      </div>
+    </div>
+    
+    <div class="icon-item">
+      <div class="icon-wrapper" style="width: 128px; height: 128px;">
+        <div class="icon-content">
+          <div class="main-letter">D</div>
+          <div class="sub-letter">V</div>
+        </div>
+      </div>
+      <div class="icon-label">
+        <div class="size-badge">192×192</div>
+        <div>android-chrome-192x192.png</div>
+      </div>
+    </div>
+    
+    <div class="icon-item">
+      <div class="icon-wrapper" style="width: 128px; height: 128px;">
+        <div class="icon-content">
+          <div class="main-letter">D</div>
+          <div class="sub-letter">V</div>
+        </div>
+      </div>
+      <div class="icon-label">
+        <div class="size-badge">512×512</div>
+        <div>android-chrome-512x512.png</div>
+      </div>
+    </div>
+    
+    <div class="og-preview">
+      <h3 style="margin-top: 0;">Open Graph Image Preview (1200×630)</h3>
+      <div class="og-image">
+        <h2>Dimitris Valasellis</h2>
+        <p>Next.js Front-End Developer</p>
+        <div class="url">dimitrisvalasellis.com</div>
+      </div>
+      <p style="margin: 10px 0 0 0; color: #666; font-size: 14px;">
+        File: <code>og-image.jpg</code>
+      </p>
+    </div>
+  </div>
+  
+  <div class="instructions">
+    <h3>📋 Quick Start Guide</h3>
+    <ol>
+      <li>
+        <strong>Easiest Method:</strong> Visit 
+        <a href="https://realfavicongenerator.net/" target="_blank">realfavicongenerator.net</a>
+      </li>
+      <li>Upload <code>/public/icon-template.svg</code></li>
+      <li>Download the generated icons package</li>
+      <li>Extract all PNG files to your <code>/public</code> folder</li>
+      <li>For the Open Graph image, use <a href="https://www.canva.com" target="_blank">Canva</a> 
+          (search "Open Graph" template)</li>
+    </ol>
+    
+    <p style="margin-top: 20px; color: #856404;">
+      <strong>OR</strong> run the generation script: <code>npm install sharp && node scripts/generate-icons.js</code>
+    </p>
+  </div>
+</body>
+</html>

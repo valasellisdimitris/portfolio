@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@import "./animations.css";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-ubuntu), "Ubuntu", "Inter", "Segoe UI", "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-ubuntu {
+  font-family: var(--font-ubuntu), "Ubuntu", "Inter", "Segoe UI", "Arial", sans-serif;
+}
+
+/* Prevent horizontal overflow site-wide */
+html,
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* Make images and svgs responsive to their containers */
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Hide system cursor everywhere, always show custom cursor */
+*,
+*:hover,
+*:active,
+*:focus {
+  cursor: none !important;
+}
+
+/* Custom Cursor Styles */
+#custom-cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  border: 2.5px solid #000000;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5);
+  transform: translate(-50%, -50%) scale(1);
+  transition: background 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    border 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  will-change: transform;
+  user-select: none;
+}
+
+#custom-cursor.custom-cursor-hover {
+  background: rgba(0, 0, 0, 0.4);
+  border: 3px solid #000000;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.8);
+  transform: translate(-50%, -50%) scale(1.4);
+}

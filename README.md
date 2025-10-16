@@ -13,7 +13,6 @@ A modern, performant portfolio website showcasing my work as a Next.js Front-End
 ## ✨ Features
 
 ### 🎨 Design & UX
-- **Dark** - Theme toggle with persistent preference storage
 - **Custom Cursor** - Enhanced desktop experience with animated custom cursor
 - **Responsive Design** - Mobile-first approach, optimized for all screen sizes
 - **Modern UI** - Card-based design with smooth shadows and rounded corners
@@ -95,12 +94,11 @@ npm start
 
 ```
 portfolio-main/
-├── public/               # Static assets
-│   ├── resume.pdf       # Resume download (add your own)
-│   └── og-image.jpg     # Social sharing image (1200x630px)
+├── public/
+│   ├── ...
 ├── src/
-│   ├── components/      # React components
-│   │   ├── home/       # Home page sections
+│   ├── components/
+│   │   ├── home/
 │   │   │   ├── Hero.tsx
 │   │   │   ├── About.tsx
 │   │   │   ├── Services.tsx
@@ -110,15 +108,15 @@ portfolio-main/
 │   │   ├── Footer.tsx
 │   │   ├── CustomCursor.tsx
 │   │   └── LoadingOverlay.tsx
-│   ├── context/        # React Context
+│   ├── context/
 │   │   └── ThemeContext.tsx
-│   ├── data/           # Data files
+│   ├── data/
 │   │   └── projects.ts
-│   ├── pages/          # Next.js pages
+│   ├── pages/
 │   │   ├── _app.tsx
 │   │   ├── _document.tsx
 │   │   └── index.tsx
-│   └── styles/         # Global styles
+│   └── styles/
 ├── package.json
 ├── tsconfig.json
 ├── next.config.ts
@@ -139,15 +137,6 @@ portfolio-main/
 3. **Create OG image**: Add a 1200x630px image at `/public/og-image.jpg`
 
 4. **Update projects**: Edit `/src/components/home/Projects.tsx`
-
-### Theme Colors
-
-The portfolio uses a neutral color palette that adapts to dark/light mode:
-- **Light Mode**: White background, neutral-900 text
-- **Dark Mode**: Neutral-900 background, neutral-100 text
-- **Accents**: Neutral-700/300 for dividers and borders
-
-Customize colors in your Tailwind configuration or component styles.
 
 ## 📊 Performance
 

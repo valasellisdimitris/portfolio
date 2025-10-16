@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import Head from "next/head";
 
 export default function HomePage() {
-  const siteUrl = "https://dimitrisvalasellis.com";
+  const siteUrl = "https://portfolio-valasellis.vercel.app";
   const title = "Dimitris Valasellis - Next.js Front-End Developer";
   const description =
     "Experienced Next.js front-end developer specializing in building pixel-perfect, high-performance web applications. Expert in React, TypeScript, and modern web technologies.";
